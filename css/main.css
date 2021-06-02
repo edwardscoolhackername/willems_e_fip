@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+.hidden {
+  display: none;
+}
+
+#sitecontainer {
+  width: 960px;
+  padding: 0 10px 0 10px;
+  margin: 0 auto; /*Centers it easy*/
+}
+
+#mainheader {
+  display: flex;
+  flex-direction: row;
+}
+
+#mainlogo {
+  margin-left: auto;
+  height: 100px;
+  width: 250px;
+  background-color: #f0aeae;
+}
+
+#mainnavigation {
+  height: 40px;
+  width: 650px;
+  background-color: #23550b;
+  margin-bottom: 20px;
+}
+
+#subnavigation {
+  height: 40px;
+  width: 290px;
+  background-color: #555434;
+}
+
+#featuredcontainer {
+  display: flex;
+  flex-direction: row;
+}
+
+#featuredimage {
+  background-color: #3c4209;
+  width: 200px;
+  height: 300px;
+  margin-right: 60px;
+  margin-top: 30px;
+}
+
+#featuredimagedescr {
+  background-color: #75687a;
+  width: 700px;
+  height: 300px;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+#heroimage {
+  background-color: #3a5445;
+  width: 960px;
+  height: 200px;
+  margin-top: 30px;
+}
