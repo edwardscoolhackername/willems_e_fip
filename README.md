@@ -1,8 +1,14 @@
-# Final Integrated Project
+# Final Integrated Project - Balla Powdered Beer FOR MEN
 Interactive Media Design - Semester 2
+
+## Project Description
+Brand mashup of Balla Powder For Men and Alexander Keith's IPA.
 
 ## Contributor
 Edward Willems
+
+## Requirements
+Static html build with JavaScript and CSS. 
 
 ## MIT LICENSE
 Copyright 2021 Edward Willems
