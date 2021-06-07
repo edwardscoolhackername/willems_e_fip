@@ -4,60 +4,109 @@
   display: none;
 }
 
+/*font-family: 'Bebas Neue', cursive;
+font-family: 'Hind Siliguri', sans-serif;
+Green: #004712
+Gold: #9d8b56
+Beige: #e3e6c7*/
+
+a:link {
+  color: #fff;
+}
+a:visited {
+  color: #fff;
+}
+a:hover {
+  color: #9d8b56;
+}
+
 #sitecontainer {
-  width: 960px;
-  padding: 0 10px 0 10px;
-  margin: 0 auto; /*Centers it easy*/
+  margin: auto;
+  width: 1500px;
+  background-color: #e3e6c7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #mainheader {
+  height: 150px;
+  background-color: #004712;
+  width: 1500px;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
-#mainlogo {
-  margin-left: auto;
-  height: 100px;
-  width: 250px;
-  background-color: #f0aeae;
+#headlogo {
+  margin: 10px 0 10px 120px;
 }
 
-#mainnavigation {
-  height: 40px;
-  width: 650px;
-  background-color: #23550b;
-  margin-bottom: 20px;
+#navbox {
 }
-
-#subnavigation {
-  height: 40px;
-  width: 290px;
-  background-color: #555434;
-}
-
-#featuredcontainer {
+#headnav {
   display: flex;
   flex-direction: row;
-}
-
-#featuredimage {
-  background-color: #3c4209;
-  width: 200px;
-  height: 300px;
+  justify-content: center;
   margin-right: 60px;
-  margin-top: 30px;
+}
+.menubuttons {
+  color: #fff;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 40px;
+  margin: 50px;
 }
 
-#featuredimagedescr {
-  background-color: #75687a;
-  width: 700px;
-  height: 300px;
-  margin-top: 30px;
-  margin-bottom: 0;
+#mainfooter {
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #000;
+  padding: 20px;
 }
-#heroimage {
-  background-color: #3a5445;
-  width: 960px;
-  height: 200px;
-  margin-top: 30px;
+
+#leftfooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#responsibility {
+  color: #fff;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 16px;
+  margin: 10px;
+  font-weight: bold;
+}
+#socialsbox {
+  display: flex;
+  flex-direction: row;
+}
+.socialbutton {
+  margin: 10px;
+}
+#copyrightbox {
+  color: #fff;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 16px;
+  margin: 10px;
+}
+
+#rightfooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-right: 10px;
+}
+#footnav {
+  display: flex;
+  flex-direction: row;
+}
+.footbuttons {
+  color: #fff;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 16px;
+  margin: 10px;
 }
