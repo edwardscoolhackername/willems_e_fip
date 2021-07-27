@@ -38,43 +38,99 @@ h4 {
   text-align: center;
 }
 #sitecontainer {
-  margin: auto;
-  width: 1500px;
+  margin: 0px auto;
+  max-width: 1500px;
   background-color: #e3e6c7;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+/* HEADER ------------------------------------------------------------- */
 #mainheader {
-  height: 150px;
+  margin-left: 10px;
+  margin-right: 10px;
   background-color: #004712;
-  width: 1500px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
 }
 
 #headlogo {
-  margin: 10px 0 10px 120px;
+  margin: 0px auto;
+}
+
+#burgercontainer {
+  display: none;
+  margin-top: 20px;
+}
+#burgercontainer.slideToggle {
+  display: block;
+  animation: menuslide 1s ease-in forwards;
+}
+
+#burgerbutton {
+  margin: 20px;
+  width: 30px;
+  height: 30px;
+  transition: all 400ms ease;
+}
+#burgerbutton.expanded {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+@keyframes menuslide {
+
 }
 
 #navbox {
 }
 #headnav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-right: 60px;
+  flex-direction: column;
+  text-align: center;
 }
 .menubuttons {
   color: #fff;
   font-family: 'Bebas Neue', cursive;
-  font-size: 40px;
-  margin: 50px;
+  font-size: 50px;
+  margin-bottom: 1.5em;
 }
 
+/* Tablet Size */
+@media screen and (min-width: 768px) {
+  #mainheader {
+    display: flex;
+    flex-direction: row;
+  }
+  #headlogo {
+    margin: 20px;
+    display: inline;
+  }
+  #burgerbutton {display: none;}
+  #burgercontainer {
+    display: flex;
+    margin: 0;
+  }
+  #headnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .menubuttons {
+    font-size: 30px;
+    margin: 20px;
+  }
+}
+
+/* Desktop Size */
+@media screen and (min-width: 1140px) {
+  .menubuttons {
+    font-size: 40px;
+  }
+}
+/* FOOTER ------------------------------------------------------- */
 #mainfooter {
   height: 150px;
   display: flex;
