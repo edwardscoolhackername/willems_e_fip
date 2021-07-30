@@ -275,7 +275,7 @@ h4 {
   position: absolute;
 }
 .productdescrip h4 {
-  font-size: 40px;
+  font-size: 30px;
 }
 .productdescrip p {
   margin: 20px;
@@ -315,6 +315,7 @@ h4 {
   .productdescrip p {
     font-size: 20px;
   }
+
 }
 @media screen and (min-width: 1140px) {
   .productdescrip {
@@ -322,5 +323,12 @@ h4 {
   }
   .productdescrip p {
     margin: 40px;
+  }
+  .productdescrip h4 {
+    font-size: 40px;
+  }
+  .quantitybuttons button {
+    font-size: 20px;
+    height: 40px;
   }
 }
