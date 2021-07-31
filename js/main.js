@@ -40,7 +40,7 @@
   function toggleoverlay() {
     let targetbeer = this.dataset.beer;
 
-    overlaybox.classList.remove('hidden');
+    overlaybox.classList.add('thereitis');
     beerinfo(targetbeer);
   }
   function beerinfo(targetIndex) {
@@ -49,10 +49,12 @@
     overlaydes.textContent = beerdata[targetIndex][2];
   }
   function closebox() {
-    overlaybox.classList.add('hidden');
+    overlaybox.classList.remove('thereitis');
   }
 
   button.addEventListener("click", showmenu);
-  beerpic.forEach(pic => pic.addEventListener('click', toggleoverlay));
+  beerpic.forEach(pic => pic.addEventListener("click", toggleoverlay));
+
   close.addEventListener("click", closebox);
+
 })();
