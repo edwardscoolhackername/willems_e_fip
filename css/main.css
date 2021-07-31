@@ -187,7 +187,7 @@ h4 {
 
 
 
-/*-- INDEX --*/
+/*-- INDEX -------------------------------------------------------------------------*/
 #promospace {
   display: flex;
   flex-direction: column;
@@ -250,7 +250,7 @@ h4 {
 }
 
 
-/* SHOP PAGE ========================================================= */
+/* SHOP PAGE ------------------------------------------------------------------------- */
 .shopsection {
   display: flex;
   flex-direction: column;
@@ -332,9 +332,9 @@ h4 {
     font-size: 20px;
     height: 40px;
   }
+}
 
-
-/*-- CONTACT --*/
+/*-- CONTACT ----------------------------------------------------------------------------*/
 #contactbox {
   height: 800px;
   background-color: #004712;
@@ -375,4 +375,40 @@ textarea {
   width: 400px;
   font-family: 'Hind Siliguri', sans-serif;
 
+}
+
+/* BEER SECTION ======================================================= */
+#beersection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+.beerbox {
+  margin: 10px;
+}
+.beerlink {
+  cursor: pointer;
+}
+.beeroverlay {
+  position: absolute;
+  top: 100px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.closebutton {
+  float: right;
+  font-size: 3em;
+  cursor: pointer;
+  padding-right: 0.6em;
+  font-family: 'Hind Siliguri', sans-serif;
+}
+.overlaylabel {
+  font-size: 70px;
+}
+/* Tablet size ============================================ */
+@media screen and ( min-width: 768px ) {
+  #beergrid {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  }
 }
