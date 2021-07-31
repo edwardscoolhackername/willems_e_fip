@@ -250,6 +250,89 @@ h4 {
 }
 
 
+/* SHOP PAGE ========================================================= */
+.shopsection {
+  display: flex;
+  flex-direction: column;
+
+}
+#shopgrid {
+  margin: 0 auto;
+}
+.productbox {
+  display: flex;
+  flex-direction: row;
+}
+.productbox img {
+  border: 1px solid #9d8b56;
+  margin-bottom: 30px;
+}
+.productdescrip {
+  margin-left: 20px;
+  background-color: #fff;
+  border: 1px solid #9d8b56;
+  height: 300px;
+  display: none;
+  position: absolute;
+}
+.productdescrip h4 {
+  font-size: 30px;
+}
+.productdescrip p {
+  margin: 20px;
+  font-size: 15px;
+}
+.price {
+  color: #000;
+  font-weight: lighter;
+  text-align: right;
+  display: inline;
+}
+
+.quantitybuttons {
+  margin: 30px;
+}
+.quantitybuttons button {
+  background-color: #004712;
+  color: #fff;
+  height: 30px;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-weight: bold;
+  margin: 0px;
+}
+.quantitybuttons input {
+  width: 20px;
+  height: 30px;
+  margin: 0px;
+}
+
+/* Tablet size ============================================ */
+@media screen and (min-width: 768px) {
+  .productdescrip {
+    display: inline-block;
+    position: static;
+    max-width: 400px;
+  }
+  .productdescrip p {
+    font-size: 20px;
+  }
+
+}
+@media screen and (min-width: 1140px) {
+  .productdescrip {
+    max-width: 700px;
+  }
+  .productdescrip p {
+    margin: 40px;
+  }
+  .productdescrip h4 {
+    font-size: 40px;
+  }
+  .quantitybuttons button {
+    font-size: 20px;
+    height: 40px;
+  }
+
 
 /*-- CONTACT --*/
 #contactbox {
@@ -291,4 +374,5 @@ textarea {
   margin: 20px;
   width: 400px;
   font-family: 'Hind Siliguri', sans-serif;
+
 }
