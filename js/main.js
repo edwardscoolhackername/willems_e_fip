@@ -9,6 +9,10 @@
         close = document.querySelector('.closebutton'),
         beerpic = document.querySelectorAll('.beerlink');
 
+  const send = document.querySelector('.sendbutton'),
+        okay = document.querySelector('.okay'),
+        okaybox = document.querySelector('.thanksbox');
+
 
   const beerdata = [
     [`original`, `Original Formula Powder`, `The perfect blend of spices and a light cereal grain that come together to provide a fresh easy drinking ale. Its subtle signature fragrance of oak and musk will leave your entire body feeling refreshed.`],
@@ -17,7 +21,12 @@
     [`spray`, `Original Formula Spray`, `The perfect blend of subtle spices and herb notes delivered in a light spray that leaves you feeling fresh, comfortable, and smelling great.`]
   ];
 
-
+  function saythanks() {
+    okaybox.classList.remove('hidden');
+  }
+  function sayokay() {
+    okaybox.classList.add('hidden');
+  }
 
   function showmenu() {
     button.classList.toggle("expanded");
@@ -54,7 +63,8 @@
 
   button.addEventListener("click", showmenu);
   beerpic.forEach(pic => pic.addEventListener("click", toggleoverlay));
-
+  send.addEventListener("click", saythanks);
+  okay.addEventListener("click", sayokay);
   close.addEventListener("click", closebox);
 
 })();

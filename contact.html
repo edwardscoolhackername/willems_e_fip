@@ -35,8 +35,17 @@
     </header>
 
   <h2 class="hidden">Contact Us</h2>
-  <h3>Get in touch!</h3>
+  <div id="contactheader">
+    <h3 id="pagelabel">Get in touch!</h3>
+    <p id="beertalk">If you have any questions or comments about any of our products, please let us know! We will get back to you as soon as we can. Thank  you!</p>
+  </div>
   <div id="contactbox">
+
+    <div class="thanksbox hidden">
+      <p id="thankyou">Thanks for the message!</p>
+      <button class="okay">OK</button>
+    </div>
+
     <form id="contactform" method="get">
       <label for="yourname">Name:</label>
       <input type="text" name="yourname" id="yourname">
@@ -50,7 +59,7 @@
       <label for="message">Message:</label>
       <textarea id="message" name="message" rows="9" cols="50"></textarea>
 
-      <button type="submit" id="sendbutton">Send!</button>
+      <a href="#" class="sendbutton"><div>Send</div></a>
     </form>
   </div> <!--Replace this box with an image??-->
 
@@ -61,10 +70,12 @@
       <div id="leftfooter">
         <div id="socialsbox">
           <p id="responsibility">Enjoy Responsibly</p>
-          <a href="" class="socialbutton"><img src="images/socials/twitter.png" alt="twitter logo"></a>
-          <a href="" class="socialbutton"><img src="images/socials/facebook.png" alt="facebook logo"></a>
-          <a href="" class="socialbutton"><img src="images/socials/instagram.png" alt="instagram logo"></a>
-        </div>
+            <div>
+              <a href="" class="socialbutton"><img src="images/socials/twitter.png" alt="twitter logo"></a>
+              <a href="" class="socialbutton"><img src="images/socials/facebook.png" alt="facebook logo"></a>
+              <a href="" class="socialbutton"><img src="images/socials/instagram.png" alt="instagram logo"></a>
+            </div>
+          </div>
         <div id="copyrightbox">
           <p>®/MD/TM/MC Alexander Keith's Brewery. Enjoy Responsibly. Do not share this content with minors. <br> All rights reserved.</p>
         </div>
@@ -83,7 +94,7 @@
           <img src="images/signature.png" alt="Signature of Balla CEO Jamie Webster">
         </div>
       </div>
-
+              <div class="hidden closebutton"></div>
     </footer>
   </main>
   <script src="js/main.js"></script>
