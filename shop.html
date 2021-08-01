@@ -39,12 +39,32 @@
       <h3 id="pagelabel">Shop</h3>
 
       <div id="shopgrid">
+
+        <div id="shopoverlay" class="productdescrip">
+          <h4>Original Formula Powder</h4>
+          <p>The perfect blend of spices and a light cereal grain that come together to provide a fresh easy drinking ale. Its subtle signature fragrance of oak and musk will leave your entire body feeling refreshed.</p>
+<!-- https://codepen.io/NinaLena/pen/jmqwxb for quantity tutorial -->
+            <div class="quantitybuttons">
+              <h4 class="price">$3.91</h4>
+              <button class="less" onclick="down('1')">
+                <span class="minus">-</span>
+              </button>
+              <input type="text" name="mynumber" class="forminput" value="1">
+              <button class="more" onclick="up('10')">
+                <span class="plus">+</span>
+              </button>
+              <button class="cartbutton">ADD TO CART</button>
+            </div>
+        </div>
+
         <div class="productbox">
-          <img src="images/original_300.jpg" alt="Bottle of Original Formula Balla Powder Beer">
+          <a href="#" class="shopclick" data-shop="0">
+            <img src="images/original_300.jpg" alt="Bottle of Original Formula Balla Powder Beer">
+          </a>
           <div class="productdescrip">
             <h4>Original Formula Powder</h4>
             <p>The perfect blend of spices and a light cereal grain that come together to provide a fresh easy drinking ale. Its subtle signature fragrance of oak and musk will leave your entire body feeling refreshed.</p>
-<!-- https://codepen.io/NinaLena/pen/jmqwxb for quantity tutorial --> 
+<!-- https://codepen.io/NinaLena/pen/jmqwxb for quantity tutorial -->
               <div class="quantitybuttons">
                 <h4 class="price">$3.91</h4>
                 <button class="less" onclick="down('1')">

@@ -379,6 +379,24 @@ h4 {
   display: inline;
 }
 
+/* OVERLAY ===============*/
+.shopoverlay {
+  margin-left: 20px;
+  background-color: #fff;
+  border: 1px solid #9d8b56;
+  height: 300px;
+  display: none;
+  position: absolute;
+}
+.shopoverlay h4 {
+  font-size: 30px;
+}
+.shopoverlay p {
+  margin: 20px;
+  font-size: 15px;
+}
+/* ===================== */
+
 .quantitybuttons {
   margin: 30px;
 }
