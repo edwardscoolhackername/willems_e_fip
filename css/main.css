@@ -33,9 +33,10 @@ h3 {
 h4 {
   color: #004712;
   font-family: 'Bebas Neue', cursive;
-  font-size: 70px;
+  font-size: 40px;
   margin: 20px;
   text-align: center;
+  max-width: 450px
 }
 #sitecontainer {
   margin: 0px auto;
@@ -44,6 +45,7 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
 }
 
 /* HEADER ------------------------------------------------------------- */
@@ -58,6 +60,7 @@ h4 {
 
 #headlogo {
   margin: 0px auto;
+  margin-top: 20px;
 }
 
 #burgercontainer {
@@ -85,8 +88,6 @@ h4 {
 
 }
 
-#navbox {
-}
 #headnav {
   flex-direction: column;
   text-align: center;
@@ -98,44 +99,9 @@ h4 {
   margin-bottom: 1.5em;
 }
 #pagelabel {
-  font-size: 75px;
+  font-size: 70px;
 }
 
-/* Tablet Size */
-@media screen and (min-width: 768px) {
-  #mainheader {
-    display: flex;
-    flex-direction: row;
-  }
-  #headlogo {
-    margin: 20px;
-    display: inline;
-  }
-  #burgerbutton {display: none;}
-  #burgercontainer {
-    display: flex;
-    margin: 0;
-  }
-  #headnav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .menubuttons {
-    font-size: 30px;
-    margin: 20px;
-  }
-  #pagelabel {
-    font-size: 100px;
-  }
-}
-
-/* Desktop Size */
-@media screen and (min-width: 1140px) {
-  .menubuttons {
-    font-size: 40px;
-  }
-}
 /* FOOTER ------------------------------------------------------- */
 #mainfooter {
   height: 150px;
@@ -149,27 +115,28 @@ h4 {
 #leftfooter {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-}
-#responsibility {
+  justify-content: center;
   color: #fff;
   font-family: 'Hind Siliguri', sans-serif;
   font-size: 16px;
-  margin: 10px;
+}
+#responsibility {
   font-weight: bold;
+  margin: 10px;
 }
 #socialsbox {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 .socialbutton {
   margin: 10px;
 }
 #copyrightbox {
-  color: #fff;
-  font-family: 'Hind Siliguri', sans-serif;
-  font-size: 16px;
+  max-width: 300px;
   margin: 10px;
+}
+#copyrightbox p {
+  font-size: 11px;
 }
 
 #rightfooter {
@@ -182,15 +149,85 @@ h4 {
 #footnav {
   display: flex;
   flex-direction: row;
+  max-width: 300px;
 }
 .footbuttons {
   color: #fff;
   font-family: 'Hind Siliguri', sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   margin: 10px;
 }
+#signature {
+  margin-top: -15px;
+}
 
+/* Tablet Size -----------------------------------------*/
+@media screen and (min-width: 768px) {
+  #mainheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #headlogo {
+    margin: 20px;
+    display: inline;
+  }
+  #burgerbutton {display: none;}
+  #burgercontainer {
+    display: flex;
+    justify-content: flex-start;
+  }
+  #headnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #navbox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menubuttons {
+    font-size: 30px;
+    margin: 20px;
+  }
+  #socialsbox {
+    flex-direction: row;
+  }
+  #copyrightbox p {
+    font-size: 16px;
+  }
+  #footnav {
+    max-width: 450px;
+  }
+  h4 {
+    max-width: 700px;
+  }
+}
 
+/* Desktop Size ------------------------------------ */
+@media screen and (min-width: 1140px) {
+  .menubuttons {
+    font-size: 40px;
+    margin: 45px;
+  }
+  .footbuttons {
+    font-size: 16px;
+    margin: 10px;
+  }
+  #footnav {
+    max-width: none;
+  }
+  #copyrightbox {
+    max-width: 420px;
+  }
+  #pagelabel {
+    font-size: 100px;
+  }
+  h4 {
+    font-size: 70px;
+    max-width: 1100px;
+  }
+}
 
 
 /*-- INDEX -------------------------------------------------------------------------*/
@@ -199,32 +236,43 @@ h4 {
   flex-direction: column;
   align-items: center;
 }
+.promoimage {
+  width: 700px;
+  height: 285px;
+  background-image: url(../images/cappile_banner_700.jpg);
+  background-repeat: no-repeat;
+	background-position: center;
+}
 #floatbox {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 700px;
-  left: 360px;
+  position: relative;
+  top: 140px;
 }
 #promotext {
   color: #fff;
-  font-size: 20px;
-  width: 800px;
+  font-size: 15px;
   text-align: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 400px;
+  border-radius: 30px;
 }
 #shopbutton {
   width: 150px;
   height: 35px;
   background-color: #004712;
-  border: 5px;
-  border-color: #9d8b56;
+  border: 3px solid #9d8b56;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 30px;
+  margin: 10px;
+}
+#shopbutton:hover {
+  background-color: #9d8b56;
 }
 .buttontext {
   font-family: 'Hind Siliguri', sans-serif;
@@ -239,20 +287,56 @@ h4 {
 }
 #abouttext {
   text-align: center;
-  font-size: 16px;
-  width: 960px;
+  font-size: 15px;
+  width: 400px;
 }
 #aboutbutton {
   width: 150px;
   height: 35px;
   background-color: #9d8b56;
-  border: 5px;
-  border-color: #004712;
+  border: 3px solid #004712;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 30px;
+  margin: 20px;
+}
+#aboutbutton:hover {
+  background-color: #004712;
+}
+@media screen and (min-width: 768px) {
+  .promoimage {
+      width: 1000px;
+      height: 407px;
+      background-image: url(../images/cappile_banner_1000.jpg);
+  }
+  #promotext {
+    width: 600px;
+  }
+  #floatbox {
+    top: 250px;
+  }
+  #abouttext {
+    width: 700px;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .promoimage {
+      width: 1500px;
+      height: 611px;
+      background-image: url(../images/cappile_banner.jpg);
+  }
+  #promotext {
+    font-size: 20px;
+    width: 800px;
+  }
+  #floatbox {
+    top: 420px;
+  }
+  #abouttext {
+    font-size: 20px;
+    max-width: 1000px;
+  }
 }
 
 
@@ -341,10 +425,17 @@ h4 {
 }
 
 /*-- CONTACT ----------------------------------------------------------------------------*/
+#contactheader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
 #contactbox {
-  height: 800px;
-  background-color: #004712;
-  padding: 30px 30px 0 50px;
+  background-image: url(../images/contactimage_700.jpg);
+  background-repeat: no-repeat;
+	background-position: center;
+  padding: 30px;
   margin-bottom: 30px;
 }
 #contactform {
@@ -352,35 +443,92 @@ h4 {
   flex-direction: column;
   justify-content: flex-start;
   width: 1000px;
-
 }
 label {
   font-family: 'Hind Siliguri', sans-serif;
-  font-size: 40px;
+  font-size: 20px;
   color: #fff;
   margin: 15px;
 }
 input {
   font-family: 'Hind Siliguri', sans-serif;
-  font-size: 20px;
-  width: 600px;
+  font-size: 12px;
+  width: 300px;
   border-radius: 16px;
   padding: 5px;
 }
 textarea {
   font-family: 'Hind Siliguri', sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   border-radius: 16px;
   padding: 5px;
+  width: 300px
 }
-#sendbutton {
+.sendbutton {
   background-color: #9d8b56;
-  font-size: 30px;
+  font-size: 20px;
+  color: #fff;
   border-radius: 16px;
   margin: 20px;
-  width: 400px;
+  margin-bottom: 40px;
+  width: 150px;
+  padding: 10px;
   font-family: 'Hind Siliguri', sans-serif;
-
+  text-align: center;
+}
+.thanksbox {
+  position: fixed;
+  top: 230px;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 300px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 3px solid #9d8b56;
+}
+.okay {
+  background-color: #9d8b56;
+  border-radius: 20px;
+  padding: 10px;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 15px;
+}
+#thankyou {
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  margin: 15px;
+}
+@media screen and (min-width: 768px) {
+  #contactbox {
+    background-image: url(../images/contactimage_1000.jpg);
+  }
+  label {
+    font-size: 30px;
+    margin: 15px;
+  }
+  input {
+    font-size: 20px;
+    width: 400px;
+  }
+  textarea {
+    font-size: 16px;
+    width: 600px;
+  }
+  #sendbutton {
+    font-size: 30px;
+    width: 400px;
+  }
+}
+@media screen and (min-width: 1140px) {
+  #contactbox {
+    background-image: url(../images/contactimage_1500.jpg);
+  }
+  input {
+    width: 600px;
+  }
+  textarea {
+    width: auto;
+  }
 }
 
 /* BEER SECTION ======================================================= */
@@ -390,6 +538,13 @@ textarea {
   align-items: center;
   margin: 0 auto;
   margin-bottom: 40px;
+}
+#beertalk {
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  max-width: 340px;
+  margin-bottom: 15px;
 }
 .beerbox {
   margin: 10px;
@@ -442,6 +597,10 @@ textarea {
 }
 /* Tablet size ============================================ */
 @media screen and ( min-width: 768px ) {
+  #beertalk {
+    max-width: 500px;
+    font-size: 16px;
+  }
   #beergrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -459,6 +618,9 @@ textarea {
   }
 }
 @media screen and (min-width: 1140px) {
+  #beertalk {
+    max-width: 600px;
+  }
   #beergrid {
     display: flex;
     flex-direction: row;
@@ -480,7 +642,68 @@ textarea {
   }
   .thereitis {
     display: grid;
-    grid-template-rows: 30px 110px 90px 300px;
+    grid-template-rows: 30px 110px 300px 90px;
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ABOUT PAGE ======================================================================= */
+#videosection {
+  background-color: #004712;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.infomercial {
+  width: 450px;
+}
+#balladescrip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.masculinedescrip {
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  max-width: 400px;
+}
+#aboutpic {
+  width: 700px;
+  height: 477px;
+  background-image: url(../images/smokerender_700.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (min-width: 768px) {
+  .infomercial {
+    width: 700px;
+  }
+  .masculinedescrip {
+    max-width: 600px;
+  }
+  #aboutpic {
+    width: 1000px;
+    height: 534px;
+    background-image: url(../images/smokerender_1000.jpg);
+  }
+}
+@media screen and (min-width: 1140px) {
+  .infomercial {
+    width: 1000px;
+  }
+  .masculinedescrip {
+    font-size: 16px;
+    max-width: 700px;
+  }
+  #aboutpic {
+    width: 1500px;
+    height: 800px;
+    background-image: url(../images/smokerender_1500.jpg);
   }
 }
