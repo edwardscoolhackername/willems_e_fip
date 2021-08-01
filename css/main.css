@@ -101,7 +101,60 @@ h4 {
   font-size: 75px;
 }
 
-/* Tablet Size */
+/* FOOTER ------------------------------------------------------- */
+#mainfooter {
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #000;
+  padding: 20px;
+}
+
+#leftfooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 16px;
+}
+#responsibility {
+  font-weight: bold;
+  margin: 10px;
+}
+#socialsbox {
+  display: flex;
+  flex-direction: column;
+}
+.socialbutton {
+  margin: 10px;
+}
+#copyrightbox {
+  max-width: 300px;
+  margin: 10px;
+}
+
+#rightfooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-right: 10px;
+}
+#footnav {
+  display: flex;
+  flex-direction: row;
+  max-width: 300px;
+}
+.footbuttons {
+  color: #fff;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 12px;
+  margin: 10px;
+}
+
+/* Tablet Size -----------------------------------------*/
 @media screen and (min-width: 768px) {
   #mainheader {
     display: flex;
@@ -128,69 +181,28 @@ h4 {
   #pagelabel {
     font-size: 100px;
   }
+  #socialsbox {
+    flex-direction: row;
+  }
 }
 
-/* Desktop Size */
+/* Desktop Size ------------------------------------ */
 @media screen and (min-width: 1140px) {
   .menubuttons {
     font-size: 40px;
+    justify-content: space-between;
+  }
+  .footbuttons {
+    font-size: 16px;
+    margin: 10px;
+  }
+  #footnav {
+    max-width: none;
+  }
+  #copyrightbox {
+    max-width: 500px;
   }
 }
-/* FOOTER ------------------------------------------------------- */
-#mainfooter {
-  height: 150px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: #000;
-  padding: 20px;
-}
-
-#leftfooter {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-#responsibility {
-  color: #fff;
-  font-family: 'Hind Siliguri', sans-serif;
-  font-size: 16px;
-  margin: 10px;
-  font-weight: bold;
-}
-#socialsbox {
-  display: flex;
-  flex-direction: row;
-}
-.socialbutton {
-  margin: 10px;
-}
-#copyrightbox {
-  color: #fff;
-  font-family: 'Hind Siliguri', sans-serif;
-  font-size: 16px;
-  margin: 10px;
-}
-
-#rightfooter {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin-right: 10px;
-}
-#footnav {
-  display: flex;
-  flex-direction: row;
-}
-.footbuttons {
-  color: #fff;
-  font-family: 'Hind Siliguri', sans-serif;
-  font-size: 16px;
-  margin: 10px;
-}
-
-
 
 
 /*-- INDEX -------------------------------------------------------------------------*/
