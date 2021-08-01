@@ -32,7 +32,8 @@
     button.classList.toggle("expanded");
     burgercon.classList.toggle("slideToggle");
   }
-
+// https://codepen.io/NinaLena/pen/jmqwxb for quantity tutorial //
+// haven't gotten it to work though //
   function up(max) {
     quantity.value = parseInt(quantity.value) + 1;
     if (quantity.value >= parseInt(max)) {

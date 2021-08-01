@@ -88,8 +88,6 @@ h4 {
 
 }
 
-#navbox {
-}
 #headnav {
   flex-direction: column;
   text-align: center;
@@ -168,6 +166,7 @@ h4 {
   #mainheader {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
   #headlogo {
     margin: 20px;
@@ -176,11 +175,15 @@ h4 {
   #burgerbutton {display: none;}
   #burgercontainer {
     display: flex;
-    margin: 0;
+    justify-content: flex-start;
   }
   #headnav {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+  }
+  #navbox {
+    display: flex;
     justify-content: space-between;
   }
   .menubuttons {
@@ -205,7 +208,7 @@ h4 {
 @media screen and (min-width: 1140px) {
   .menubuttons {
     font-size: 40px;
-    justify-content: space-between;
+    margin: 45px;
   }
   .footbuttons {
     font-size: 16px;
@@ -653,7 +656,7 @@ textarea {
   align-items: center;
 }
 .infomercial {
-  width: 400px;
+  width: 450px;
 }
 #balladescrip {
   display: flex;
@@ -670,7 +673,11 @@ textarea {
   max-width: 400px;
 }
 #aboutpic {
-  
+  width: 700px;
+  height: 477px;
+  background-image: url(../images/smokerender_700.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -680,6 +687,11 @@ textarea {
   .masculinedescrip {
     max-width: 600px;
   }
+  #aboutpic {
+    width: 1000px;
+    height: 534px;
+    background-image: url(../images/smokerender_1000.jpg);
+  }
 }
 @media screen and (min-width: 1140px) {
   .infomercial {
@@ -688,5 +700,10 @@ textarea {
   .masculinedescrip {
     font-size: 16px;
     max-width: 700px;
+  }
+  #aboutpic {
+    width: 1500px;
+    height: 800px;
+    background-image: url(../images/smokerender_1500.jpg);
   }
 }
