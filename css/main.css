@@ -378,20 +378,23 @@ h4 {
   text-align: right;
   display: inline;
 }
+.shopclick:hover {
+  opacity: 70%;
+}
 
 /* OVERLAY ===============*/
 .shopoverlay {
-  margin-left: 20px;
+  margin: 0 auto;
   background-color: #fff;
   border: 1px solid #9d8b56;
-  height: 300px;
-  display: none;
-  position: absolute;
+  height: 250px;
+  position: fixed;
+  width: 400px;
 }
-.shopoverlay h4 {
+.shopoverlaylabel {
   font-size: 30px;
 }
-.shopoverlay p {
+.shopoverlaydescrip {
   margin: 20px;
   font-size: 15px;
 }
@@ -423,6 +426,9 @@ h4 {
   }
   .productdescrip p {
     font-size: 20px;
+  }
+  .shopclick {
+    pointer-events: none;
   }
 
 }
