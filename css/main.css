@@ -211,19 +211,26 @@ h4 {
   flex-direction: column;
   align-items: center;
 }
+.promoimage {
+  width: 700px;
+  height: 285px;
+  background-image: url(../images/cappile_banner_700.jpg);
+  background-repeat: no-repeat;
+	background-position: center;
+}
 #floatbox {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 700px;
-  left: 360px;
+  position: relative;
+  top: 30px;
+
 }
 #promotext {
   color: #fff;
-  font-size: 20px;
-  width: 800px;
+  font-size: 15px;
+  width: 400px;
   text-align: center;
 }
 #shopbutton {
@@ -265,6 +272,27 @@ h4 {
   align-items: center;
   justify-content: center;
   margin: 30px;
+}
+@media screen and (min-width: 768px) {
+  .promoimage {
+      width: 1000px;
+      height: 407px;
+      background-image: url(../images/cappile_banner_1000.jpg);
+  }
+  #promotext {
+    width: 600px;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .promoimage {
+      width: 1500px;
+      height: 611px;
+      background-image: url(../images/cappile_banner.jpg);
+  }
+  #promotext {
+    font-size: 20px;
+    width: 800px;
+  }
 }
 
 
